@@ -1,0 +1,118 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+}
+
+.bold-text {
+    font-weight: 500;
+    letter-spacing: .3px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    height: 280px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.main th, td {
+    border: 1px solid white;
+}
+
+.main table {
+    border: 1px solid black;
+    box-shadow: 0 0 10px white;
+    width: 500px;
+    height: 80%;
+}
+
+.main input {
+    width: 90%;
+    height: 40%;
+    margin-left: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.main .buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.main .buttons button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    transition: opacity .15s;
+}
+
+button:hover {
+    transition: opacity .15s;
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+.create-table-button {
+    color: white;
+    background-color: green;
+}
+
+.delete-all-button  {
+    color: white;
+    background-color: darkred;
+}
+
+table td button{
+    width: 100%;
+    height: 100%;
+    background-color: #2f4f4f;
+    color: white;
+    border: none;
+    transition: opacity .15s;
+}
+
+.generated-tables {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    grid-gap: 50px;
+    margin: 0 70px;
+}
+
+.generated-tables .table {
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 10px white;
+    font-size: 14px;
+    text-align: center;
+    height: 196px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;}
+
+.generated-tables .table td {
+    height: 30px;
+    width: 200px;
+    overflow-y: auto;
+    white-space: normal;
+}
